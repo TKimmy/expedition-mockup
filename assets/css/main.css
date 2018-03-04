@@ -1,0 +1,71 @@
+@font-face {
+	font-family: "Gotham-Black";
+	src: url('../fonts/Gotham-Black.otf');
+}
+@font-face {
+	font-family: "Gotham-Light";
+	src: url('../fonts/Gotham-Light.otf');
+}
+body {
+	min-height: 100vh;
+}
+h1, h2, h3 {
+	font-family: "Gotham-Black";
+	letter-spacing: 0.5rem;
+}
+h4, h5, h6, p {
+	font-family: "Gotham-Light";
+}
+
+.bgmain {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 80%;
+	width: 100%;
+	background-image: url('../img/home.jpg');
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	z-index: 0;
+}
+.splashText {
+	font-size: 6rem;
+	line-height: 6rem;
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	letter-spacing: 2rem;
+}
+.navbar {
+	background: #f8f9faCC!important;
+	z-index: 1;
+}
+.navigation {
+	margin-left: 60px;
+	margin-right: 40px;
+}
+.nav-item {
+	margin-right: 40px;
+}
+.search-bar input {
+	font-family: FontAwesome, "Gotham-Light", sans-serif;
+	font-weight: lighter;
+	border-radius: 20px;
+}
+::-webkit-input-placeholder {
+	text-align: right;
+}
+input:moz-placeholder {
+	text-align: right;	
+}
+
+/*
+textarea, input {
+  padding:10px;
+	font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}*/
