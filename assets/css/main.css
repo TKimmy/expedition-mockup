@@ -8,7 +8,6 @@
 }
 body {
 	background-color: #fff;
-	min-height: 100vh;
 }
 h1, h2, h3 {
 	font-family: "Gotham-Black";
@@ -19,11 +18,7 @@ h4, h5, h6, p {
 }
 
 .bgmain {
-	position: relative;
-	top: 0;
-	left: 0;
 	height: 100vh;
-	width: 100%;
 	background-image: url('../img/home.jpg');
 	background-size: cover;
 	background-position: bottom;
@@ -46,12 +41,11 @@ h4, h5, h6, p {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #f8f9faCC!important;
+	background: #f8f9faCC;
 	z-index: 1;
 }
 .navigation {
-	margin-left: 60px;
-	margin-right: 40px;
+	margin: 0 40px 0 60px;
 }
 .nav-item {
 	margin-right: 40px;
@@ -86,4 +80,36 @@ input:moz-placeholder {
 .icon {
 	text-align: center;
 	font-size: 15rem;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 768px) {
+	.splashText {
+		font-size: 5rem;
+		letter-spacing: 1rem;
+	}
+	h3 {
+		font-size: 1.5rem;
+	}
+	.navigation {
+		margin: 0 30px 0 30px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.splashText {
+		font-size: 3rem;
+		letter-spacing: 0.5rem;
+		line-height: 4rem;
+	}
+	.bgmain {
+		height: 80vh;
+	}
+	h3 {
+		font-size: 1rem;
+	}
+	.navigation {
+		margin: 0 20px 0 20px;
+	}
 }
