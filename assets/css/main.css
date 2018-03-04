@@ -7,6 +7,7 @@
 	src: url('../fonts/Gotham-Light.otf');
 }
 body {
+	background-color: #fff;
 	min-height: 100vh;
 }
 h1, h2, h3 {
@@ -18,16 +19,18 @@ h4, h5, h6, p {
 }
 
 .bgmain {
-	position: absolute;
+	position: relative;
 	top: 0;
 	left: 0;
-	height: 80%;
+	height: 100vh;
 	width: 100%;
 	background-image: url('../img/home.jpg');
 	background-size: cover;
 	background-position: bottom;
 	background-repeat: no-repeat;
 	z-index: 0;
+
+	clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .splashText {
 	font-size: 6rem;
@@ -39,6 +42,10 @@ h4, h5, h6, p {
 	letter-spacing: 2rem;
 }
 .navbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	background: #f8f9faCC!important;
 	z-index: 1;
 }
@@ -61,11 +68,22 @@ input:moz-placeholder {
 	text-align: right;	
 }
 
-/*
-textarea, input {
-  padding:10px;
-	font-family: FontAwesome, "Open Sans", Verdana, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-}*/
+/*content*/
+
+.content-header {
+	text-align: center;
+}
+.content-divider hr {
+	border-top: 1px solid #00000033;
+	width: 20%;
+}
+.content-item-header {
+	text-align: center;
+}
+.text-block {
+	padding: 20px;
+}
+.icon {
+	text-align: center;
+	font-size: 15rem;
+}
