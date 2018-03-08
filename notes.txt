@@ -1,0 +1,17 @@
+-- STYLE -- 
+
+Font Colors:
+	Dark - #58595B
+	Light - #ffffff
+
+Font Sizes:
+	Size - 19pt
+	Line Height - 22.81pt
+	Letter Spacing - 307
+
+Theme Colors:
+	Blue - #597175
+	Black - #303137
+
+Header Opacity: 90%
+

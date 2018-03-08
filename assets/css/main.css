@@ -12,9 +12,11 @@ body {
 h1, h2, h3 {
 	font-family: "Gotham-Black";
 	letter-spacing: 0.5rem;
+	color: #58595B;
 }
 h4, h5, h6, p {
 	font-family: "Gotham-Light";
+	color: #58595B;
 }
 
 .bgmain {
@@ -41,7 +43,7 @@ h4, h5, h6, p {
 	top: 0;
 	left: 0;
 	width: 100%;
-	background: #f8f9faCC;
+	background: #ffffffE6;
 	z-index: 1;
 }
 .navigation {
@@ -71,6 +73,9 @@ input:moz-placeholder {
 	border-top: 1px solid #00000033;
 	width: 20%;
 }
+.content-item {
+	padding: 0 4rem 0 4rem;
+}
 .content-item-header {
 	text-align: center;
 }
@@ -79,7 +84,7 @@ input:moz-placeholder {
 }
 .icon {
 	text-align: center;
-	font-size: 15rem;
+	padding: 20px;
 }
 
 /*MEDIA QUERIES*/
